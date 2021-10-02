@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'MontserratBold', sans-serif;
+    src: url('./fonts/Montserrat-Bold.ttf');
+    display: swap;
+}
+
+@font-face {
+    font-family: 'MontserratRegular', sans-serif;
+    src: url('./fonts/Montserrat-Regular.ttf');
+    display: swap;
+}
+
+@font-face {
+    font-family: 'MontserratMedium', sans-serif;
+    src: url('./fonts/Montserrat-Medium.ttf');
+    display: swap;
+}
+
+body{
+    overflow: hidden;
+}
+
+.menu{
+    padding: 80px 120px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+.menu__title{
+    font-size: 80px;
+    font-family: 'MontserratMedium', sans-serif;
+    font-weight: 500;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    padding: 50px 140px;
+    border-radius: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-column{
+    row-gap: 50px;
+}
+
+.menu__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+/* Lines in first-column */
+
+.menu__item::after{
+    content: '';
+    position: absolute;
+    width: 410px;
+    height: 2px;
+    background-color: #000000;
+    top: 68px;
+    right: 130px;
+}
+
+.menu__item:nth-child(2)::after{
+    width: 710px;
+}
+.menu__item:nth-child(3)::after{
+    width: 710px;
+}
+.menu__item:nth-child(4)::after{
+    width: 620px;
+}
+.menu__item:nth-child(5)::after{
+    width: 760px;
+}
+.menu__item:nth-child(7)::after{
+    width: 590px;
+}
+.menu__item:nth-child(6)::after{
+    width: 590px;
+}
+.menu__item:nth-child(7)::after{
+    width: 610px;
+}
+.menu__item:nth-child(8)::after{
+    width: 0;
+}
+
+.name__box{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.food__title{
+    font-size: 62px;
+    font-family: 'MontserratMedium', sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.food__description{
+    font-size: 54px;
+    font-family: 'MontserratRegular', sans-serif;
+    font-weight: 400;
+}
+
+.menu__item:nth-child(1) .food__description{
+    max-width: 420px;
+}
+.menu__item:nth-child(3) .food__description{
+    max-width: 650px;
+}
+.menu__item:nth-child(6) .food__description{
+    max-width: 850px;
+}
+.menu__item:nth-child(7) .food__description{
+    max-width: 850px;
+}
+.menu__item:last-child{
+    margin-top: 30px;
+}
+
+.food__price{
+    font-size: 60px;
+    color: rgb(212, 150, 35);
+    font-family: 'MontserratBold', sans-serif;
+    font-weight: 700;
+    padding-top: 15px;
+    position: relative;
+}
+
+.extra__text{
+    font-size: 55px;
+    color: rgb(212, 150, 35);
+    font-family: 'MontserratBold', sans-serif;
+    font-weight: 700;
+}
+
+/* Second Column */
+.second-column{
+    row-gap: 8px;
+}
+
+.second-column .menu__item:nth-child(1) .food__description{
+    max-width: 560px;
+}
+.second-column .menu__item:nth-child(2) .food__description{
+    max-width: 680px;
+}
+.second-column .menu__item:nth-child(3) .food__description{
+    max-width: 750px;
+}
+.second-column .menu__item:nth-child(4) .food__description{
+    max-width: 750px;
+}
+.second-column .menu__item:nth-child(5) .food__description{
+    max-width: 750px;
+}
+.second-column .menu__item:nth-child(6) .food__description{
+    max-width: 850px;
+}
+.second-column .menu__item:nth-child(7) .food__description{
+    max-width: 940px;
+}
+.second-column .menu__item::after{
+    content: '';
+    position: absolute;
+    width: 410px;
+    height: 2px;
+    background-color: #000000;
+    top: 68px;
+    right: 155px;
+}
+/* Lines in second-column */
+.second-column .menu__item:nth-child(1)::after{
+    width: 485px;
+}
+.second-column .menu__item:nth-child(2)::after{
+    width: 680px;
+}
+.second-column .menu__item:nth-child(3)::after{
+    width: 330px;
+}
+.second-column .menu__item:nth-child(4)::after{
+    width: 160px;
+}
+.second-column .menu__item:nth-child(5)::after{
+    width: 255px;
+}
+.second-column .menu__item:nth-child(6)::after{
+    width: 420px;
+}
+.second-column .menu__item:nth-child(7)::after{
+    width: 390px;
+}
+
+.second-column .menu__item:last-child{
+    margin-top: 0;
+}
+
+.second-column .food__title{
+    margin-bottom: 5px;
+}
+
+/* Third Column */
+
+.third-column{
+    row-gap: 40px;
+}
+/* Lines in third-column */
+.third-column .menu__item:nth-child(1)::after{
+    right: 360px;
+    width: 260px;
+}
+.third-column .menu__item:nth-child(2)::after {
+    right: 155px;
+    width: 480px;
+}
+.third-column .menu__item:nth-child(3)::after {
+    right: 350px;
+    width: 40px;
+    top: 60px;
+}
+.third-column .menu__item:nth-child(4)::after {
+    right: 350px;
+    width: 170px;
+}
+.third-column .menu__item:nth-child(5)::after {
+    right: 350px;
+    width: 200px;
+}
+.third-column .menu__item:nth-child(6)::after {
+    right: 160px;
+    width: 400px;
+}
+.third-column .menu__item:nth-child(7)::after {
+    right: 160px;
+    width: 390px;
+}
+.third-column .menu__item:nth-child(8)::after {
+    right: 160px;
+    width: 450px;
+}
+.third-column .menu__item:nth-child(9)::after {
+    right: 160px;
+    width: 0px;
+}
+
+.third-column .menu__item:nth-child(3) .food__title{
+    font-size: 58px;
+}
+.third-column .menu__item:nth-child(9) .food__title{
+    font-size: 58px;
+}
+
+.third-column .menu__item:nth-child(3) .food__price{
+    padding-top: 0;
+}
+.third-column .menu__item:nth-child(5) .food__price{
+    padding-top: 0;
+}
+.third-column .menu__item:nth-child(9) .food__price{
+    padding-top: 0;
+}
+/* OZ */
+.third-column .menu__item:nth-child(1) .food__price::after{
+    content: '8oz';
+    position: absolute;
+    color: #000000;
+    font-size: 35px;
+    left: 42px;
+    top: -35px;
+}
+.third-column .menu__item:nth-child(1) .food__price::before{
+    content: '12oz';
+    position: absolute;
+    color: #000000;
+    font-size: 35px;
+    right: 45px;
+    top: -35px;
+}
+.third-column .menu__item:nth-child(3) .food__price::after{
+    content: '10oz';
+    position: absolute;
+    color: #000000;
+    font-size: 35px;
+    left: 42px;
+    top: -35px;
+}
+.third-column .menu__item:nth-child(3) .food__price::before{
+    content: '14oz';
+    position: absolute;
+    color: #000000;
+    font-size: 35px;
+    right: 45px;
+    top: -35px;
+}
+.third-column .menu__item:nth-child(4) .food__price::after{
+    content: '8oz';
+    position: absolute;
+    color: #000000;
+    font-size: 35px;
+    left: 42px;
+    top: -35px;
+}
+.third-column .menu__item:nth-child(4) .food__price::before{
+    content: '12oz';
+    position: absolute;
+    color: #000000;
+    font-size: 35px;
+    right: 45px;
+    top: -35px;
+}
+.third-column .menu__item:nth-child(5) .food__price::after{
+    content: '8oz';
+    position: absolute;
+    color: #000000;
+    font-size: 35px;
+    left: 42px;
+    top: -35px;
+}
+.third-column .menu__item:nth-child(5) .food__price::before{
+    content: '12oz';
+    position: absolute;
+    color: #000000;
+    font-size: 35px;
+    right: 45px;
+    top: -35px;
+}
+
+.third-column .menu__item:nth-child(4) .food__description{
+    max-width: 650px;
+}
+.third-column .menu__item:nth-child(6) .food__description{
+    max-width: 750px;
+}
