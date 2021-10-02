@@ -20,20 +20,20 @@ body{
     overflow: hidden;
 }
 
-.menu{
+.menu {
     padding: 80px 120px;
     display: flex;
     justify-content: space-between;
     column-gap: 80px;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     width: 1200px;
 }
 
-.menu__title{
+.menu__title {
     font-size: 80px;
     font-family: 'MontserratMedium', sans-serif;
     font-weight: 500;
@@ -41,22 +41,22 @@ body{
     color: #FFFFFF;
     margin-bottom: 50px;
     padding: 50px 140px;
-    border-radius: 50px;
+    border-radius: 30px;
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.menu__list{
+.menu__list {
     display: flex;
     flex-direction: column;
 }
 
-.first-column{
+.first-column {
     row-gap: 50px;
 }
 
-.menu__item{
+.menu__item {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -65,7 +65,7 @@ body{
 
 /* Lines in first-column */
 
-.menu__item::after{
+.menu__item::after {
     content: '';
     position: absolute;
     width: 410px;
@@ -75,67 +75,78 @@ body{
     right: 130px;
 }
 
-.menu__item:nth-child(2)::after{
+.menu__item:nth-child(2)::after {
     width: 710px;
 }
-.menu__item:nth-child(3)::after{
+
+.menu__item:nth-child(3)::after {
     width: 710px;
 }
-.menu__item:nth-child(4)::after{
+
+.menu__item:nth-child(4)::after {
     width: 620px;
 }
-.menu__item:nth-child(5)::after{
+
+.menu__item:nth-child(5)::after {
     width: 760px;
 }
-.menu__item:nth-child(7)::after{
+
+.menu__item:nth-child(7)::after {
     width: 590px;
 }
-.menu__item:nth-child(6)::after{
+
+.menu__item:nth-child(6)::after {
     width: 590px;
 }
-.menu__item:nth-child(7)::after{
+
+.menu__item:nth-child(7)::after {
     width: 610px;
 }
-.menu__item:nth-child(8)::after{
+
+.menu__item:nth-child(8)::after {
     width: 0;
 }
 
-.name__box{
+.name__box {
     display: flex;
     flex-direction: column;
 
 }
 
-.food__title{
+.food__title {
     font-size: 62px;
     font-family: 'MontserratMedium', sans-serif;
     font-weight: 700;
     margin-bottom: 5px;
 }
 
-.food__description{
+.food__description {
     font-size: 54px;
     font-family: 'MontserratRegular', sans-serif;
     font-weight: 400;
 }
 
-.menu__item:nth-child(1) .food__description{
+.menu__item:nth-child(1) .food__description {
     max-width: 420px;
 }
-.menu__item:nth-child(3) .food__description{
+
+.menu__item:nth-child(3) .food__description {
     max-width: 650px;
 }
-.menu__item:nth-child(6) .food__description{
+
+.menu__item:nth-child(6) .food__description {
     max-width: 850px;
 }
-.menu__item:nth-child(7) .food__description{
+
+.menu__item:nth-child(7) .food__description {
     max-width: 850px;
 }
-.menu__item:last-child{
+
+.menu__item:last-child {
     margin-top: 30px;
 }
 
-.food__price{
+.food__price {
     font-size: 60px;
     color: rgb(212, 150, 35);
     font-family: 'MontserratBold', sans-serif;
@@ -144,7 +155,7 @@ body{
     position: relative;
 }
 
-.extra__text{
+.extra__text {
     font-size: 55px;
     color: rgb(212, 150, 35);
     font-family: 'MontserratBold', sans-serif;
@@ -152,32 +163,39 @@ body{
 }
 
 /* Second Column */
-.second-column{
+.second-column {
     row-gap: 8px;
 }
 
-.second-column .menu__item:nth-child(1) .food__description{
+.second-column .menu__item:nth-child(1) .food__description {
     max-width: 560px;
 }
-.second-column .menu__item:nth-child(2) .food__description{
+
+.second-column .menu__item:nth-child(2) .food__description {
     max-width: 680px;
 }
-.second-column .menu__item:nth-child(3) .food__description{
+
+.second-column .menu__item:nth-child(3) .food__description {
     max-width: 750px;
 }
-.second-column .menu__item:nth-child(4) .food__description{
+
+.second-column .menu__item:nth-child(4) .food__description {
     max-width: 750px;
 }
-.second-column .menu__item:nth-child(5) .food__description{
+
+.second-column .menu__item:nth-child(5) .food__description {
     max-width: 750px;
 }
-.second-column .menu__item:nth-child(6) .food__description{
+
+.second-column .menu__item:nth-child(6) .food__description {
     max-width: 850px;
 }
-.second-column .menu__item:nth-child(7) .food__description{
+
+.second-column .menu__item:nth-child(7) .food__description {
     max-width: 940px;
 }
-.second-column .menu__item::after{
+
+.second-column .menu__item::after {
     content: '';
     position: absolute;
     width: 410px;
@@ -186,166 +204,401 @@ body{
     top: 68px;
     right: 155px;
 }
+
 /* Lines in second-column */
-.second-column .menu__item:nth-child(1)::after{
+.second-column .menu__item:nth-child(1)::after {
     width: 485px;
 }
-.second-column .menu__item:nth-child(2)::after{
+
+.second-column .menu__item:nth-child(2)::after {
     width: 680px;
 }
-.second-column .menu__item:nth-child(3)::after{
+
+.second-column .menu__item:nth-child(3)::after {
     width: 330px;
 }
-.second-column .menu__item:nth-child(4)::after{
+
+.second-column .menu__item:nth-child(4)::after {
     width: 160px;
 }
-.second-column .menu__item:nth-child(5)::after{
+
+.second-column .menu__item:nth-child(5)::after {
     width: 255px;
 }
-.second-column .menu__item:nth-child(6)::after{
+
+.second-column .menu__item:nth-child(6)::after {
     width: 420px;
 }
-.second-column .menu__item:nth-child(7)::after{
+
+.second-column .menu__item:nth-child(7)::after {
     width: 390px;
 }
 
-.second-column .menu__item:last-child{
+.second-column .menu__item:last-child {
     margin-top: 0;
 }
 
-.second-column .food__title{
+.second-column .food__title {
     margin-bottom: 5px;
 }
 
 /* Third Column */
 
-.third-column{
+.third-column {
     row-gap: 40px;
 }
+
 /* Lines in third-column */
-.third-column .menu__item:nth-child(1)::after{
+.third-column .menu__item:nth-child(1)::after {
     right: 360px;
     width: 260px;
 }
+
 .third-column .menu__item:nth-child(2)::after {
     right: 155px;
     width: 480px;
 }
+
 .third-column .menu__item:nth-child(3)::after {
     right: 350px;
     width: 40px;
     top: 60px;
 }
+
 .third-column .menu__item:nth-child(4)::after {
     right: 350px;
     width: 170px;
 }
+
 .third-column .menu__item:nth-child(5)::after {
     right: 350px;
     width: 200px;
 }
+
 .third-column .menu__item:nth-child(6)::after {
     right: 160px;
     width: 400px;
 }
+
 .third-column .menu__item:nth-child(7)::after {
     right: 160px;
     width: 390px;
 }
+
 .third-column .menu__item:nth-child(8)::after {
     right: 160px;
     width: 450px;
 }
+
 .third-column .menu__item:nth-child(9)::after {
     right: 160px;
     width: 0px;
 }
 
-.third-column .menu__item:nth-child(3) .food__title{
-    font-size: 58px;
-}
-.third-column .menu__item:nth-child(9) .food__title{
+.third-column .menu__item:nth-child(3) .food__title {
     font-size: 58px;
 }
 
-.third-column .menu__item:nth-child(3) .food__price{
+.third-column .menu__item:nth-child(9) .food__title {
+    font-size: 58px;
+}
+
+.third-column .menu__item:nth-child(3) .food__price {
     padding-top: 0;
 }
-.third-column .menu__item:nth-child(5) .food__price{
+
+.third-column .menu__item:nth-child(5) .food__price {
     padding-top: 0;
 }
-.third-column .menu__item:nth-child(9) .food__price{
+
+.third-column .menu__item:nth-child(9) .food__price {
     padding-top: 0;
 }
+
 /* OZ */
-.third-column .menu__item:nth-child(1) .food__price::after{
+.third-column .menu__item .food__price::before {
+    font-size: 35px;
+    position: absolute;
+    color: #000000;
+    top: -35px;
+}
+.third-column .menu__item .food__price::after {
+    font-size: 35px;
+    position: absolute;
+    color: #000000;
+    top: -35px;
+}
+
+.third-column .menu__item:nth-child(1) .food__price::after {
     content: '8oz';
-    position: absolute;
-    color: #000000;
-    font-size: 35px;
     left: 42px;
-    top: -35px;
+    
 }
-.third-column .menu__item:nth-child(1) .food__price::before{
+
+.third-column .menu__item:nth-child(1) .food__price::before {
     content: '12oz';
-    position: absolute;
-    color: #000000;
-    font-size: 35px;
     right: 45px;
-    top: -35px;
 }
-.third-column .menu__item:nth-child(3) .food__price::after{
+
+.third-column .menu__item:nth-child(3) .food__price::after {
     content: '10oz';
-    position: absolute;
-    color: #000000;
-    font-size: 35px;
     left: 42px;
-    top: -35px;
 }
-.third-column .menu__item:nth-child(3) .food__price::before{
+
+.third-column .menu__item:nth-child(3) .food__price::before {
     content: '14oz';
-    position: absolute;
-    color: #000000;
-    font-size: 35px;
     right: 45px;
-    top: -35px;
 }
-.third-column .menu__item:nth-child(4) .food__price::after{
+
+.third-column .menu__item:nth-child(4) .food__price::after {
     content: '8oz';
-    position: absolute;
-    color: #000000;
-    font-size: 35px;
+    left: 42px;
+}
+
+.third-column .menu__item:nth-child(4) .food__price::before {
+    content: '12oz';
+    right: 45px;
+}
+
+.third-column .menu__item:nth-child(5) .food__price::after {
+    content: '8oz';
     left: 42px;
     top: -35px;
 }
-.third-column .menu__item:nth-child(4) .food__price::before{
+
+.third-column .menu__item:nth-child(5) .food__price::before {
     content: '12oz';
-    position: absolute;
-    color: #000000;
-    font-size: 35px;
-    right: 45px;
-    top: -35px;
-}
-.third-column .menu__item:nth-child(5) .food__price::after{
-    content: '8oz';
-    position: absolute;
-    color: #000000;
-    font-size: 35px;
-    left: 42px;
-    top: -35px;
-}
-.third-column .menu__item:nth-child(5) .food__price::before{
-    content: '12oz';
-    position: absolute;
-    color: #000000;
-    font-size: 35px;
     right: 45px;
     top: -35px;
 }
 
-.third-column .menu__item:nth-child(4) .food__description{
+.third-column .menu__item:nth-child(4) .food__description {
     max-width: 650px;
 }
-.third-column .menu__item:nth-child(6) .food__description{
+
+.third-column .menu__item:nth-child(6) .food__description {
     max-width: 750px;
+}
+
+
+@media screen and (max-width: 2560px) {
+
+    .menu {
+        column-gap: 40px;
+        padding: 50px 100px;
+    }
+
+    .container {
+        width: 700px;
+    }
+
+    .menu__title {
+        font-size: 46px;
+        padding: 50px 100px;
+    }
+
+    .food__title {
+        font-size: 40px;
+    }
+
+    .food__description {
+        font-size: 35px;
+    }
+
+    .food__price {
+        font-size: 38px;
+        padding-top: 0;
+    }
+
+    .extra__text {
+        font-size: 35px;
+    }
+
+    /* First column */
+
+    .first-column{
+        row-gap: 30px;
+    }
+    .menu__item:nth-child(1) .food__description{
+        max-width: 278px;
+    }
+    .menu__item:nth-child(3) .food__description{
+        max-width: 450px;
+    }
+    .menu__item:nth-child(6) .food__description{
+        max-width: 500px;
+    }
+    .menu__item:nth-child(7) .food__description{
+        max-width: 550px;
+    }
+
+    .menu__item::after{
+        top: 38px;
+        right: 80px;
+        width: 260px;
+    }
+
+    .menu__item:nth-child(2)::after{
+        width: 420px;
+    }
+    .menu__item:nth-child(3)::after{
+        width: 430px;
+    }
+    .menu__item:nth-child(4)::after{
+        width: 390px;
+    }
+    .menu__item:nth-child(5)::after{
+        width: 460px;
+    }
+    .menu__item:nth-child(6)::after{
+        width: 370px;
+    }
+    .menu__item:nth-child(7)::after{
+        width: 380px;
+    }
+
+    /* Second column */
+
+    /* Lines */
+    .second-column .menu__item::after{
+        top: 38px;
+        right: 95px;
+    }
+    .second-column .menu__item:nth-child(1)::after{
+        width: 290px;
+    }
+    .second-column .menu__item:nth-child(2)::after{
+        width: 400px;
+    }
+    .second-column .menu__item:nth-child(3)::after{
+        width: 180px;
+    }
+    .second-column .menu__item:nth-child(4)::after{
+        width: 60px;
+    }
+    .second-column .menu__item:nth-child(5)::after{
+        width: 130px;
+    }
+    .second-column .menu__item:nth-child(6)::after{
+        width: 240px;
+    }
+    .second-column .menu__item:nth-child(7)::after{
+        width: 210px;
+    }
+
+
+
+    .second-column .menu__item:nth-child(1) .food__description{
+        max-width: 360px;
+    }
+    .second-column .menu__item:nth-child(2) .food__description{
+        max-width: 500px;
+    }
+    .second-column .menu__item:nth-child(3) .food__description{
+        max-width: 500px;
+    }
+    .second-column .menu__item:nth-child(4) .food__description{
+        max-width: 500px;
+    }
+    .second-column .menu__item:nth-child(5) .food__description{
+        max-width: 500px;
+    }
+    .second-column .menu__item:nth-child(6) .food__description{
+        max-width: 550px;
+    }
+    .second-column .menu__item:nth-child(7) .food__description{
+        max-width: 600px;
+    }
+
+
+
+    /* Third Column */
+    .third-column{
+        row-gap: 30px;
+    }
+    .third-column .menu__item:nth-child(3) .food__title {
+        font-size: 36px;
+    }
+
+    .third-column .menu__item .food__price::before {
+        font-size: 20px;
+        position: absolute;
+        color: #000000;
+        top: -28px;
+    }
+    .third-column .menu__item .food__price::after {
+        font-size: 20px;
+        position: absolute;
+        color: #000000;
+        top: -28px;
+    }
+
+    .third-column .menu__item:nth-child(9) .food__title{
+        font-size: 35px;
+    }
+
+    
+    /* OZ */
+    .third-column .menu__item:nth-child(1) .food__price::before {
+        right: 25px;
+    }
+    .third-column .menu__item:nth-child(3) .food__price::before {
+        right: 25px;
+    }
+    .third-column .menu__item:nth-child(4) .food__price::before{
+        right: 22px;
+    }
+    .third-column .menu__item:nth-child(5) .food__price::before {
+        right: 25px;
+    }
+    
+
+    
+    /* Lines */
+    .third-column .menu__item:nth-child(1)::after {
+        right: 220px;
+        width: 130px;
+    }
+    .third-column .menu__item:nth-child(2)::after {
+        right: 100px;
+        width: 270px;
+    }
+    .third-column .menu__item:nth-child(3)::after {
+        right: 215px;
+        width: 20px;
+        top: 40px;
+    }
+    .third-column .menu__item:nth-child(4)::after {
+        right: 215px;
+        width: 280px;
+        top: 40px;
+    }
+    .third-column .menu__item:nth-child(5)::after {
+        right: 220px;
+        width: 100px;
+        top: 40px;
+    }
+    .third-column .menu__item:nth-child(6)::after {
+        right: 100px;
+        width: 220px;
+        top: 40px;
+    }
+    .third-column .menu__item:nth-child(7)::after {
+        right: 100px;
+        width: 220px;
+        top: 40px;
+    }
+    .third-column .menu__item:nth-child(8)::after {
+        right: 100px;
+        width: 260px;
+        top: 40px;
+    }
+
+    .third-column .menu__item:nth-child(4) .food__description{
+        max-width: 450px;
+    }
+    .third-column .menu__item:nth-child(6) .food__description{
+        max-width: 480px;
+    }
+
 }
